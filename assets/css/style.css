@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --background-page: #1C1B1F;
+    --background-aside: #000;
+    --backgroung-boxes: #313131;
+    --color-bottoms: #58C4F1;
+    --color-hard-alert: #C52D1D;
+    --color-midium-alert: #CA8534;
+    --color-status: #ADCA34;
+    --text-grey: #A4A4A4;
+    --text-white: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    color: var(--text-grey);
+}
+
+body {
+    background-color: var(--background-page);
+}
+
+.container-login {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}*/
+
+.imgbackground{
+    grid-column: 3fr;
+    width: 100vw;
+    max-height: 100vh;
+    display: block;
+    object-fit: cover;
+}
+
+.container{
+    grid-column: 1fr;
+    width: 55vh;
+}
+
+.container-logo{
+    margin:80px 0px 80px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-login{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--text-grey);
+    margin: 8px 70px 8px 77px;
+    border-radius: 5px;
+}
+
+.icone-matricula, .icone-senha, .icone-auth{
+    background-color: var(--color-bottoms);
+    padding: 11px 12px;
+    color: var(--text-white);
+}
+
+.text-input{
+    font-size: 1.4rem;
+    margin-left: 14px;
+}
+
+.text-lost{
+    font-size: 1.4rem;
+    margin: 52px 70px 72px 77px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-grey);
+}
+
+.link-login{
+    text-decoration: underline;
+}
+
+.botao-entrar{
+    padding: 16px 148px;
+    color: var(--text-white);
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: var(--color-bottoms);
+    margin: 0 70px 124px 77px;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li:not(:last-child)::after {
+    content: " | "; 
+    margin: 0 5px;
+}
+
+.links-rodape{
+    font-size: 1.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

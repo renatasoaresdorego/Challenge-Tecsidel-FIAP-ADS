@@ -1,0 +1,23 @@
+@import 'default.css';
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    margin-bottom: 10px;
+}
+a {
+    text-decoration: none;
+    color: var(--text-grey);
+}
+
+.aside {
+    font-size: 2rem;
+}
+
+.aside .top-links li:first-child a {
+    color: var(--color-bottoms);
+    font-weight: bold;
+}

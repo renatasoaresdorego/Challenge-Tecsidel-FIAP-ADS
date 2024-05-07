@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --background-page: #1C1B1F;
+    --background-aside: #000;
+    --backgroung-boxes: #313131;
+    --color-bottoms: #58C4F1;
+    --color-hard-alert: #C52D1D;
+    --color-midium-alert: #CA8534;
+    --color-status: #ADCA34;
+    --text-grey: #A4A4A4;
+    --text-white: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    color: var(--text-grey);
+}
+
+body {
+    background-color: var(--background-page);
+}

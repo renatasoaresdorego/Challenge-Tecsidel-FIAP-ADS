@@ -13,11 +13,153 @@ a {
     color: var(--text-grey);
 }
 
+/* MENU ASIDE */
+
 .aside {
     font-size: 2rem;
+    background-color: var(--background-aside);
 }
 
 .aside .top-links li:first-child a {
     color: var(--color-bottoms);
     font-weight: bold;
+}
+
+/* CABECALHO */
+
+.cabecalho{
+    background-color: var(--backgroung-boxes);
+    color: var(--text-white);
+    display: flex;
+    padding: 6px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-container{
+    width: 692px;
+    padding: 5px;
+    background-color: #E2E2E2;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    color: var(--background-page);
+}
+
+.icon-pesquisa{
+    padding: 0 12px;
+}
+
+.input-pesquisa{
+    color: var(--background-page);
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+
+.infos-perfil{
+    display: flex;
+    align-items: center;
+}
+
+.icon-perfil{
+    font-size: 4.8rem;
+}
+
+.data-atualizada{
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.nome-func{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.cargo{
+    font-weight: 300;
+}
+
+/* MAIN */
+
+main{
+    color: var(--text-white);
+}
+
+main h1{
+    font-size: 2rem;
+}
+
+/* PORTICO */
+
+.portico{
+    background-color: var(--backgroung-boxes);
+}
+
+.veic{
+    display: flex;
+    font-size: 1.4rem;
+}
+
+/* ULTIMOS VEICULOS */
+
+.infos-veiculos{
+    background-color: var(--background-page);
+}
+
+/* ULTIMOS ALERTAS */
+
+.ult-alertas{
+    background-color: var(--backgroung-boxes);
+}
+
+.filtro a{
+    font-size: 1.2rem;
+    border: 1px solid;
+}
+
+.filtro a:first-child{
+    color: var(--color-bottoms);
+}
+
+.alertas{
+    display: flex;
+    background-color: var(--background-page);
+    padding: 24px 12px;
+    margin: 18px;
+    border-radius: 10px;
+}
+
+.icon-fail{
+    color: var(--color-hard-alert);
+    font-size: 4.8rem;
+}
+
+.infos-alertas{
+    font-size: 1.2rem;
+    padding: 0 74px 0 22px;
+}
+
+.ver-mais{
+    color: var(--background-aside);
+    background-color: var(--color-bottoms);
+    padding: 6px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ver-mais:hover{
+    background-color: var(--background-page);
+    border: 1px solid;
+    color: var(--color-bottoms);
+}
+
+.icon-fail2{
+    color: var(--color-midium-alert);
+    font-size: 4.8rem;
 }

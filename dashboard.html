@@ -22,8 +22,8 @@
     <!-- MENU ASIDE -->
     <aside>
         <div>
-            <img src="./assets/images/Logo-Tecsidel-removebg-preview (1) 1.svg" alt="Logo">
             <ul class="aside">
+                <img src="./assets/images/Logo-Tecsidel-removebg-preview (1) 1.svg" alt="Logo">
                 <div class="top-links">
                     <li><a href="#">Dashboard</a></li>
                     <li><a href="#">Câmeras</a></li>
@@ -38,6 +38,116 @@
             </ul>
         </div>
     </aside>
+
+    <!-- HEADER -->
+    <header class="cabecalho">
+
+        <form action="#" class="search-container">
+            <span class="material-symbols-outlined icon-pesquisa">search</span>
+            <input type="text" class="input-pesquisa" placeholder="Pesquisa" />
+        </form>
+        
+        <section class="data-atualizada">
+            <p id="data"></p>
+            <p id="diaSemana"></p>
+        </section>
+
+        <section class="infos-perfil">
+            <div>
+                <p class="nome-func">Fulano da Silva</p>
+                <p class="cargo">Administrador</p>
+                <a href="#">Sair</a>
+            </div>
+            <span class="material-symbols-outlined icon-perfil">account_circle</span>
+        </section>
+    </header>
+
+    <main>
+
+        <section class="portico">
+            <div class="supervisorio">
+                <h1>Pórtico BR-101 - KM 538</h1>
+                <figure>
+                    <img src="./assets/images/PORTICO.png" alt="Representação gráfica do pórtico">
+                </figure>
+            </div>
+            <div class="ultimos-veiculos">
+                <h1>Últimos Veículos</h1>
+                <div class="infos-veiculos">
+                    <ul class="veic">
+                        <li>Placa: R2D2-990</li>
+                        <li>Tipo: Automóvel</li>
+                        <li>Quantidade de Eixos: 2 </li>
+                        <li>Tag:</li>
+                        <img src="./assets/images/Ativo.svg" alt="Icone de ativo">
+                        <li>Ativa</li>
+                    </ul>
+                    <ul class="veic">
+                        <li>Placa: FML-3269</li>
+                        <li>Tipo: Caminhão</li>
+                        <li>Quantidade de Eixos: 12 </li>
+                        <li>Tag:</li>
+                        <img src="./assets/images/Falha.svg" alt="Icone falha">
+                        <li>Falha</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="ult-alertas">
+            <h1>Últimos Alertas</h1>
+            <div class="filtro">
+                <a href="#">Todos</a>
+                <a href="#">RFID</a>
+                <a href="#">Equipamentos</a>
+                <a href="#">Manutenção</a>
+            </div>
+
+            <section class="container-alertas">
+                <div class="alertas">
+                    <span class="material-symbols-outlined icon-fail">emergency_home</span>
+                    <div class="infos-alertas">
+                        <p>ID #123456</p>
+                        <p>Erro na leitura</p>
+                        <p>Data: 07/04/2024 11:01:52</p>
+                    </div>
+                    <button class="ver-mais">Ver mais</button>
+                </div>
+                <div class="alertas">
+                    <span class="material-symbols-outlined icon-fail">emergency_home</span>
+                    <div class="infos-alertas">
+                        <p>ID #123456</p>
+                        <p>Erro na leitura</p>
+                        <p>Data: 07/04/2024 11:01:52</p>
+                    </div>
+                    <button class="ver-mais">Ver mais</button>
+                </div>
+                <div class="alertas">
+                    <span class="material-symbols-outlined icon-fail">emergency_home</span>
+                    <div class="infos-alertas">
+                        <p>ID #123456</p>
+                        <p>Erro na leitura</p>
+                        <p>Data: 07/04/2024 11:01:52</p>
+                    </div>
+                    <button class="ver-mais">Ver mais</button>
+                </div>
+                <div class="alertas">
+                    <span class="material-symbols-outlined icon-fail2">emergency_home</span>
+                    <div class="infos-alertas">
+                        <p>ID #123456</p>
+                        <p>Erro na leitura</p>
+                        <p>Data: 07/04/2024 11:01:52</p>
+                    </div>
+                    <button class="ver-mais">Ver mais</button>
+                </div>
+            </section>
+        </section>
+
+
+    </main>
     
+
+
+    <script src="./main.js"></script>
 </body>
 </html>

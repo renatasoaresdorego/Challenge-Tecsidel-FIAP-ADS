@@ -31,3 +31,11 @@ function updateTitulo() {
   var selectedOption = select.options[select.selectedIndex];
   h3.textContent = selectedOption.textContent;
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  var select = document.getElementById("dropbox-portico");
+  var h3 = document.getElementById("conteudo-selecionado");
+  var defaultOption = select.options[0]; 
+  h3.textContent = defaultOption.textContent;
+});
+

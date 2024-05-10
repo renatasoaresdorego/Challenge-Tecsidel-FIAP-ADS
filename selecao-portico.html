@@ -19,70 +19,80 @@
 
 </head>
 <body>
-    
-        <!-- HEADER -->
-        <header class="cabecalho">
-            <figure class="logotipo">
-                <img src="./assets/images/Logo-Tecsidel-removebg-preview (1) 1.svg" alt="Logo" class="imagem-logo">
-            </figure>
-
-            <div class="container-busca">
-                <form action="#" class="search-container">
-                    <span class="material-symbols-outlined icon-pesquisa">search</span>
-                    <input type="text" class="input-pesquisa" placeholder="Pesquisa" />
-                </form>
-            </div>
-            
-            <section class="data-atualizada">
-                <p id="data"></p>
-                <p id="diaSemana"></p>
-            </section>
-    
-            <section class="infos-perfil">
-
-                    <div class="container-dados">
-                        <p class="nome-func">Fulano da Silva</p>
-                        <p class="cargo">Administrador</p>
-                        <a href="#" class="link-dados">Sair</a>
-                    </div>
-
-                <div class="container-perfil">
-                    <span class="material-symbols-outlined icon-perfil">account_circle</span>
+                <!-- HEADER -->
+            <header class="cabecalho">
+                <figure class="logotipo">
+                    <img src="./assets/images/Logo-Tecsidel-removebg-preview (1) 1.svg" alt="Logo" class="imagem-logo">
+                </figure>
+                <div class="container-busca">
+                    <form action="#" class="search-container">
+                        <span class="material-symbols-outlined icon-pesquisa">search</span>
+                        <input type="text" class="input-pesquisa" placeholder="Pesquisa" />
+                    </form>
                 </div>
-            </section>
-        </header>
-
-        <main>
-            <section class="container-esquerda">
-                <section class="titulo">
-                    <div class="titulo-texto">
-                        <h3>Selecione o Pórtico FreeFlow:</h3>
-                    </div>
-                    <div class="container-dropbox">
-                        <select name="dropbox-portico" id="dropbox-portico" onchange="updateTitulo()">
-                            <option value="opcao1">Rodovia #01 - KM 414</option>
-                            <option value="opcao2">Rodovia #01 - KM 447</option>
-                            <option value="opcao3">Rodovia #01 - KM 538</option>
-                        </select>
+            
+                <section class="data-atualizada">
+                    <p id="data"></p>
+                    <p id="diaSemana"></p>
+                </section>
+                <section class="infos-perfil">
+                        <div class="container-dados">
+                            <p class="nome-func">Fulano da Silva</p>
+                            <p class="cargo">Administrador</p>
+                            <a href="#" class="link-dados">Sair</a>
+                        </div>
+                    <div class="container-perfil">
+                        <span class="material-symbols-outlined icon-perfil">account_circle</span>
                     </div>
                 </section>
-                <figure class="container-mapa">
-                    <img class="img-mapa" src="assets/images/mapa.svg" alt="mapa">
-                </figure>
-            </section>
-
-            <section class="container-direita">
-                <div class="conteudo">
-                    <div class="titulo-texto">
-                        <h3 id="conteudo-selecionado">a</h3>
-                    </div>
-
-                </div>
-                <div class="link">
-
-                </div>
-            </section>
-        </main>
+            </header>
+            <main class="main">
+                <section class="container-esquerda">
+                    <section class="titulo">
+                        <div class="titulo-texto">
+                            <h3>Selecione o Pórtico FreeFlow:</h3>
+                        </div>
+                        <div class="container-dropbox">
+                            <select name="dropbox-portico" id="dropbox-portico" onchange="updateTitulo()">
+                                <option value="" disabled selected>Escolha o Pórtico</option>
+                                <option value="opcao1">Rodovia #01 - KM 414</option>
+                                <option value="opcao2">Rodovia #01 - KM 447</option>
+                                <option value="opcao3">Rodovia #01 - KM 538</option>
+                            </select>
+                        </div>
+                    </section>
+                    <figure class="container-mapa">
+                        <img class="img-mapa" src="assets/images/mapa.svg" alt="mapa">
+                    </figure>
+                </section>
+                <section class="container-direita">
+                        <div class="conteudo-direita">
+                            <div class="titulo-direita">
+                                <h3 id="conteudo-selecionado" class="conteudo-selecionado"></h3>
+                            </div>
+                            <div class="texto-direita">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nemo neque perferendis tempore, natus maiores odio. Ducimus nisi earum molestiae?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est corrupti provident quasi aperiam sit.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quos, aperiam sed deleniti atque in blanditiis similique magnam perspiciatis fuga quas soluta et, est voluptas nisi deserunt harum illo consequatur mollitia laudantium, totam sapiente? Inventore atque obcaecati eius molestias aut.</p>
+                            </div>
+                            <div class="container-botao">
+                                <button class="botao-monitorar">Monitorar</button>
+                            </div>
+                            <div class="container-links">
+                                <ul class="lista-links">
+                                    <li>FAQ</li>
+                                    <li>Ajuda</li>
+                                    <li>Politica de Cookies</li>
+                                    <li>Termo de Uso</li>
+                                    <li>Politica de Privacidade</li>
+                                </ul>
+                            </div>
+                        </div>
+            
+            
+                </section>
+            </main>
+       
 
         <script src="./main.js"></script>
 </body>

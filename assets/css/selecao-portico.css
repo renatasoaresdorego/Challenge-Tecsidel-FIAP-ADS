@@ -1,0 +1,138 @@
+/* CABECALHO */
+
+.cabecalho{
+    display: flex;
+    background-color: var(--backgroung-boxes);
+    width: 100vw;
+    height: 7.5vh;
+
+}
+
+.infos-perfil{
+    display: flex;
+}
+
+.input-pesquisa{
+    width: 36vw;
+}
+
+.logotipo{
+    width: 13vw;
+}
+
+.imagem-logo{
+    width: 100%; 
+    height: 100%;
+    margin-left: 0.57vw;
+}
+
+.container-busca{
+    margin-left: 3.5vw;
+    align-content: center;
+}
+
+.search-container{
+    width: 36vw;
+    padding: 0.2vw;
+    background-color: #E2E2E2;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    color: var(--background-page);
+}
+
+.icon-pesquisa{
+    margin-left: 1vw;
+}
+
+.input-pesquisa{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-left: 1vw;
+}
+
+.data-atualizada{
+    margin-left: 12.6vw;
+    font-size: 24px;
+    align-content: center;
+    color: var(--text-white);
+    font-weight: bold;
+}
+
+.infos-perfil{
+    font-size: 14px;
+    margin-left: 5.5vw;
+   
+}
+
+.container-dados{
+    align-content: center;
+    text-align: right;
+    color: var(--text-white);
+}
+
+.nome-func{
+    font-weight: medium;
+}
+
+.cargo{
+    font-weight: lighter;
+}
+
+.link-dados{
+    text-decoration: none;
+    color: inherit;
+    font-weight: lighter;
+}
+
+.container-perfil{
+    height: 64px;
+    width: 64px;
+    margin-left: 1.5vw;
+}
+
+.icon-perfil{
+    font-size: 64px;
+    color: var(--text-white);
+}
+
+/* MAIN CONTENT */
+
+.titulo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-esquerda{
+    width: 58vw;
+
+}
+
+.titulo-texto{
+    font-weight: medium;
+    font-size: 36px;
+    color: var(--text-white);
+    margin: 3vh;
+
+}
+
+.container-dropbox{
+    align-content: center;
+
+}
+
+.container-dropbox select {
+    border-radius: 10px; 
+    padding: 0.5vw;
+}
+
+.container-mapa{
+    width: 60vw;
+    height: 86vh;
+}
+
+.img-mapa{
+    height: 100%;
+    width: 100%;
+}

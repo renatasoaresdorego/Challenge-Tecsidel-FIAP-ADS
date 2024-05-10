@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+
+
+    <link rel="stylesheet" href="assets/css/selecao-portico.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <title>Seleção de Pórticos</title>
+
+</head>
+<body>
+    
+        <!-- HEADER -->
+        <header class="cabecalho">
+            <figure class="logotipo">
+                <img src="./assets/images/Logo-Tecsidel-removebg-preview (1) 1.svg" alt="Logo" class="imagem-logo">
+            </figure>
+
+            <div class="container-busca">
+                <form action="#" class="search-container">
+                    <span class="material-symbols-outlined icon-pesquisa">search</span>
+                    <input type="text" class="input-pesquisa" placeholder="Pesquisa" />
+                </form>
+            </div>
+            
+            <section class="data-atualizada">
+                <p id="data"></p>
+                <p id="diaSemana"></p>
+            </section>
+    
+            <section class="infos-perfil">
+
+                    <div class="container-dados">
+                        <p class="nome-func">Fulano da Silva</p>
+                        <p class="cargo">Administrador</p>
+                        <a href="#" class="link-dados">Sair</a>
+                    </div>
+
+                <div class="container-perfil">
+                    <span class="material-symbols-outlined icon-perfil">account_circle</span>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <section class="container-esquerda">
+                <section class="titulo">
+                    <div class="titulo-texto">
+                        <h3>Selecione o Pórtico FreeFlow:</h3>
+                    </div>
+                    <div class="container-dropbox">
+                        <select name="dropbox-portico" id="dropbox-portico" onchange="updateTitulo()">
+                            <option value="opcao1">Rodovia #01 - KM 414</option>
+                            <option value="opcao2">Rodovia #01 - KM 447</option>
+                            <option value="opcao3">Rodovia #01 - KM 538</option>
+                        </select>
+                    </div>
+                </section>
+                <figure class="container-mapa">
+                    <img class="img-mapa" src="assets/images/mapa.svg" alt="mapa">
+                </figure>
+            </section>
+
+            <section class="container-direita">
+                <div class="conteudo">
+                    <div class="titulo-texto">
+                        <h3 id="conteudo-selecionado">a</h3>
+                    </div>
+
+                </div>
+                <div class="link">
+
+                </div>
+            </section>
+        </main>
+
+        <script src="./main.js"></script>
+</body>
+</html>

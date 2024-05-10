@@ -24,3 +24,10 @@ function atualizarDataDiaSemana() {
 window.onload = function() {
     atualizarDataDiaSemana();
 };
+
+function updateTitulo() {
+  var select = document.getElementById("dropbox-portico");
+  var h3 = document.getElementById("conteudo-selecionado");
+  var selectedOption = select.options[select.selectedIndex];
+  h3.textContent = selectedOption.textContent;
+}

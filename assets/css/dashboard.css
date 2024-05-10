@@ -13,14 +13,68 @@ a {
     color: var(--text-grey);
 }
 
-/* MENU ASIDE */
-
-.aside {
-    font-size: 2rem;
-    background-color: var(--background-aside);
+body{
+    display: grid;
+    grid-template-areas: 
+        "aside header"
+        "aside main";
+        grid-template-columns: 15vw auto;
+        grid-template-rows: auto 100vh;
 }
 
-.aside .top-links li:first-child a {
+.o-header {
+    grid-area: header;
+    }
+    
+    .o-aside {
+    grid-area: aside;
+    height: 100vh;
+    width: 15vw;
+    background-color: var(--background-aside);
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .o-main {
+    grid-area: main;
+    display: flex;
+    }
+
+/* MENU ASIDE */
+
+.o-aside a{
+    font-size: 2rem;
+}
+
+.logo-aside{
+    width: 14vw;
+}
+
+.img-logo{
+    width: 100%;
+    height: 100%;
+    padding: 2.5vh 0.57vw;
+}
+
+.edit-link{
+    margin-top: 5.37vh;
+}
+
+.top-links{
+    display: flex;
+    flex-direction: column;
+    padding: 7.12vh 1.87vw;
+}
+
+.bottom-links{
+    padding: 0 7.12vh 0 1.87vw;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 54px;
+}
+
+.o-aside .top-links li:first-child a {
     color: var(--color-bottoms);
     font-weight: bold;
 }
@@ -55,6 +109,8 @@ a {
     border: none;
     background: none;
     box-shadow: none;
+    width: 33vw;
+    height: 3.2vh;
 }
 
 .infos-perfil{
@@ -62,8 +118,13 @@ a {
     align-items: center;
 }
 
+.container-dados{
+    text-align: right;
+}
+
 .icon-perfil{
     font-size: 4.8rem;
+    margin-left: 1.5vw;
 }
 
 .data-atualizada{
@@ -90,17 +151,33 @@ main h1{
     font-size: 2rem;
 }
 
+.conteudo-dir{
+    margin-top: 1.75vh;
+}
+
 /* PORTICO */
 
 .portico{
     background-color: var(--backgroung-boxes);
-    margin: 16px 30px;
-    padding: 16px 19px;
+    width: 49.7vw;
+    height: 60vh;
     border-radius: 30px;
+    margin: 1.48vh 1.56vw;
+    padding: 1.75vh 0.83vw;
 }
 
-.titulo-portico{
-    padding: 24px;
+.titulo-portico, .ultimos-veiculos{
+    padding-left: 2.8vw;
+}
+
+.img-portico{
+    width: 47.6vw;
+    height: 38.4vh;
+    margin: 2.5vh 0;
+}
+
+.ultimos-veiculos{
+    margin-bottom: 1vh;
 }
 
 .veic{
@@ -109,48 +186,48 @@ main h1{
 }
 
 .veic li{
-    padding-left: 36px;
+    padding-left: 1.87vw;
 }
 
 /* ULTIMOS VEICULOS */
 
-.ultimos-veiculos{
-    padding: 24px;
-}
-
 .infos-veiculos{
     background-color: var(--background-page);
-    padding: 20px 33px;
     border-radius: 10px;
     align-items: center;
+    text-align: center;
+    padding: 1vh 1.70vw;
+    max-height: 7.06vh;
+    /* Adicionando uma barra de rolagem vertical quando necessário */
+    overflow-y: auto;
 }
 
 /* ULTIMOS ALERTAS */
 
 .ult-alertas{
     background-color: var(--backgroung-boxes);
-    padding: 20px 33px;
+    width: 49.68vw;
+    height: 29vh;
     border-radius: 30px;
-    margin:25px 30px;
+    margin: 1.48vh 1.56vw;
+    padding: 1.75vh 0.83vw;
 }
 
 .titulos-links{
     display: flex;
     justify-content: space-between;
+    padding: 21px 59px;
 }
 
 .container-alertas{
     display: flex;
-}
-
-.titulo-alertas{
-    padding-left: 54px;
+    flex-wrap: wrap;
 }
 
 .filtro a{
     font-size: 1.2rem;
     border: 1px solid;
-    padding: 6px 30px;
+    padding: 0.55vh 0.52vw;
 }
 
 .filtro a:first-child{
@@ -160,9 +237,9 @@ main h1{
 .alertas{
     display: flex;
     background-color: var(--background-page);
-    padding: 24px 12px;
-    margin: 18px;
     border-radius: 10px;
+    padding: 1.20vh 1.09vw;
+    margin: 0.83vh 0.36vw;
 }
 
 .icon-fail{
@@ -203,9 +280,10 @@ main h1{
 
 .cameras{
     background-color: var(--backgroung-boxes);
-    padding: 21px 33px;
+    width: 31.40vw;
+    height: 60.09vh;
+    padding: 1.94vh 1.71vw;
     border-radius: 30px;
-    margin: 24px 33px;
 }
 
 .filtro a{
@@ -214,14 +292,22 @@ main h1{
 
 .painel-camera{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .painel-camera p{
     font-size: 1.2rem;
 }
 
+.box-cameras{
+    padding: 0.21vw;
+}
+
 .infos-camera{
     display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    margin-right: 10px;
 }
 
 .status-camera{
@@ -236,14 +322,22 @@ main h1{
 
 .equipamentos{
     background-color: var(--backgroung-boxes);
+    width: 31.4vw;
+    height: 26.11vh;
+    border-radius: 30px;
+    padding: 2.40vh 1.66vw;
+    margin-top: 2.40vh;
 }
 
 .titulo-equip{
     display: flex;
+    gap: 40px;
 }
 
 
 .info-equip{
     display: flex;
     font-size: 1.4rem;
+    padding: 10px 15px;
+    gap: 60px;
 }

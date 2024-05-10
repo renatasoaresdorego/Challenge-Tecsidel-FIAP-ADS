@@ -94,6 +94,13 @@ main h1{
 
 .portico{
     background-color: var(--backgroung-boxes);
+    margin: 16px 30px;
+    padding: 16px 19px;
+    border-radius: 30px;
+}
+
+.titulo-portico{
+    padding: 24px;
 }
 
 .veic{
@@ -101,21 +108,49 @@ main h1{
     font-size: 1.4rem;
 }
 
+.veic li{
+    padding-left: 36px;
+}
+
 /* ULTIMOS VEICULOS */
+
+.ultimos-veiculos{
+    padding: 24px;
+}
 
 .infos-veiculos{
     background-color: var(--background-page);
+    padding: 20px 33px;
+    border-radius: 10px;
+    align-items: center;
 }
 
 /* ULTIMOS ALERTAS */
 
 .ult-alertas{
     background-color: var(--backgroung-boxes);
+    padding: 20px 33px;
+    border-radius: 30px;
+    margin:25px 30px;
+}
+
+.titulos-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-alertas{
+    display: flex;
+}
+
+.titulo-alertas{
+    padding-left: 54px;
 }
 
 .filtro a{
     font-size: 1.2rem;
     border: 1px solid;
+    padding: 6px 30px;
 }
 
 .filtro a:first-child{
@@ -162,4 +197,53 @@ main h1{
 .icon-fail2{
     color: var(--color-midium-alert);
     font-size: 4.8rem;
+}
+
+/* CAMERAS */
+
+.cameras{
+    background-color: var(--backgroung-boxes);
+    padding: 21px 33px;
+    border-radius: 30px;
+    margin: 24px 33px;
+}
+
+.filtro a{
+    font-size: 1.2rem;
+}
+
+.painel-camera{
+    display: flex;
+}
+
+.painel-camera p{
+    font-size: 1.2rem;
+}
+
+.infos-camera{
+    display: flex;
+}
+
+.status-camera{
+    color: var(--color-status);
+}
+
+.falha{
+    color: var(--color-hard-alert);
+}
+
+/* EQUIPAMENTOS */
+
+.equipamentos{
+    background-color: var(--backgroung-boxes);
+}
+
+.titulo-equip{
+    display: flex;
+}
+
+
+.info-equip{
+    display: flex;
+    font-size: 1.4rem;
 }

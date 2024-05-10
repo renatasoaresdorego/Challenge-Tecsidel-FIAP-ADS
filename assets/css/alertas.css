@@ -142,7 +142,7 @@ main h1{
     padding: 0 22px;
 }
 
-.ver-mais{
+.reportar{
     color: var(--background-aside);
     background-color: var(--color-bottoms);
     padding: 6px 24px;
@@ -156,7 +156,7 @@ main h1{
     align-self: flex-end;
 }
 
-.ver-mais:hover{
+.reportar:hover{
     background-color: var(--background-page);
     border: 1px solid;
     color: var(--color-bottoms);

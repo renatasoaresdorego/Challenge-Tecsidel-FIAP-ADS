@@ -56,7 +56,7 @@
         </section>
 
         <section class="infos-perfil">
-            <div>
+            <div class="container-dados">
                 <p class="nome-func">Fulano da Silva</p>
                 <p class="cargo">Administrador</p>
                 <a href="#">Sair</a>
@@ -67,186 +67,201 @@
 
     <main class="o-main">
 
-        <section class="portico">
-            <div class="supervisorio">
-                <h1 class="titulo-portico">Pórtico BR-101 - KM 538</h1>
-                <figure>
-                    <img src="./assets/images/PORTICO.png" alt="Representação gráfica do pórtico">
-                </figure>
-            </div>
-            <div>
-                <h1 class="ultimos-veiculos">Últimos Veículos</h1>
-                <div class="infos-veiculos">
-                    <ul class="veic">
-                        <li>Placa: R2D2-990</li>
-                        <li>Tipo: Automóvel</li>
-                        <li>Quantidade de Eixos: 2 </li>
-                        <li>Tag:</li>
-                        <img src="./assets/images/Ativo.svg" alt="Icone de ativo">
-                        <li>Ativa</li>
-                    </ul>
-                    <ul class="veic">
-                        <li>Placa: FML-3269</li>
-                        <li>Tipo: Caminhão</li>
-                        <li>Quantidade de Eixos: 12 </li>
-                        <li>Tag:</li>
-                        <img src="./assets/images/Falha.svg" alt="Icone falha">
-                        <li>Falha</li>
-                    </ul>
+        <div class="conteudo-esq">
+            <section class="portico">
+                <div class="supervisorio">
+                    <h1 class="titulo-portico">Pórtico BR-101 - KM 538</h1>
+                    <figure>
+                        <img class="img-portico" src="./assets/images/PORTICO.png" alt="Representação gráfica do pórtico">
+                    </figure>
                 </div>
-            </div>
-        </section>
-
-        <section class="ult-alertas">
-            <div class="titulos-links">
-                <h1 class="titulo-alertas">Últimos Alertas</h1>
-                <div class="filtro">
-                    <a href="#">Todos</a>
-                    <a href="#">RFID</a>
-                    <a href="#">Equipamentos</a>
-                    <a href="#">Manutenção</a>
-                </div>
-            </div>
-
-            <section class="container-alertas">
-                <div class="alertas">
-                    <span class="material-symbols-outlined icon-fail">emergency_home</span>
-                    <div class="infos-alertas">
-                        <p>ID #123456</p>
-                        <p>Erro na leitura</p>
-                        <p>Data: 07/04/2024 11:01:52</p>
+                <div>
+                    <h1 class="ultimos-veiculos">Últimos Veículos</h1>
+                    <div class="infos-veiculos">
+                        <ul class="veic">
+                            <li>Placa: R2D2-990</li>
+                            <li>Tipo: Automóvel</li>
+                            <li>Quantidade de Eixos: 2 </li>
+                            <li>Tag:</li>
+                            <img src="./assets/images/Ativo.svg" alt="Icone de ativo">
+                            <li>Ativa</li>
+                        </ul>
+                        <ul class="veic">
+                            <li>Placa: FML-3269</li>
+                            <li>Tipo: Caminhão</li>
+                            <li>Quantidade de Eixos: 12 </li>
+                            <li>Tag:</li>
+                            <img src="./assets/images/Falha.svg" alt="Icone falha">
+                            <li>Falha</li>
+                        </ul>
+                        <ul class="veic">
+                            <li>Placa: R2D2-990</li>
+                            <li>Tipo: Automóvel</li>
+                            <li>Quantidade de Eixos: 2 </li>
+                            <li>Tag:</li>
+                            <img src="./assets/images/Ativo.svg" alt="Icone de ativo">
+                            <li>Ativa</li>
+                        </ul>
+                        <ul class="veic">
+                            <li>Placa: FML-3269</li>
+                            <li>Tipo: Caminhão</li>
+                            <li>Quantidade de Eixos: 12 </li>
+                            <li>Tag:</li>
+                            <img src="./assets/images/Falha.svg" alt="Icone falha">
+                            <li>Falha</li>
+                        </ul>
                     </div>
-                    <button class="ver-mais">Ver mais</button>
-                </div>
-                <div class="alertas">
-                    <span class="material-symbols-outlined icon-fail">emergency_home</span>
-                    <div class="infos-alertas">
-                        <p>ID #123456</p>
-                        <p>Erro na leitura</p>
-                        <p>Data: 07/04/2024 11:01:52</p>
-                    </div>
-                    <button class="ver-mais">Ver mais</button>
-                </div>
-                <div class="alertas">
-                    <span class="material-symbols-outlined icon-fail">emergency_home</span>
-                    <div class="infos-alertas">
-                        <p>ID #123456</p>
-                        <p>Erro na leitura</p>
-                        <p>Data: 07/04/2024 11:01:52</p>
-                    </div>
-                    <button class="ver-mais">Ver mais</button>
-                </div>
-                <div class="alertas">
-                    <span class="material-symbols-outlined icon-fail2">emergency_home</span>
-                    <div class="infos-alertas">
-                        <p>ID #123456</p>
-                        <p>Erro na leitura</p>
-                        <p>Data: 07/04/2024 11:01:52</p>
-                    </div>
-                    <button class="ver-mais">Ver mais</button>
                 </div>
             </section>
-        </section>
-
-        <section class="cameras">
-            <div class="titulos-links">
-                <h1 class="titulo-camera">Câmeras</h1>
-                <div class="filtro">
-                    <a href="#">Todas</a>
-                    <a href="#">Auxiliar</a>
-                    <a href="#">Infravermelho</a>
-                    <a href="#">Câmera 3D</a>
+            <section class="ult-alertas">
+                <div class="titulos-links">
+                    <h1 class="titulo-alertas">Últimos Alertas</h1>
+                    <div class="filtro">
+                        <a href="#">Todos</a>
+                        <a href="#">RFID</a>
+                        <a href="#">Equipamentos</a>
+                        <a href="#">Manutenção</a>
+                    </div>
                 </div>
-            </div>
-            <div class="painel-camera">
-                <figure class="box-cameras">
-                    <img src="./assets/images/cam1 1.svg" alt="Imagem de estrada">
-                    <div class="infos-camera">
-                        <div>
-                            <p><strong>ID #23658</strong></p>
-                            <p><strong>Localização:</strong> Poste externo</p>
+                <section class="container-alertas">
+                    <div class="alertas">
+                        <span class="material-symbols-outlined icon-fail">emergency_home</span>
+                        <div class="infos-alertas">
+                            <p>ID #123456</p>
+                            <p>Erro na leitura</p>
+                            <p>Data: 07/04/2024 11:01:52</p>
                         </div>
-                        <div>
-                            <p><strong>Status</strong></p>
-                            <p class="status-camera">Ativo</p>
-                        </div>
+                        <button class="ver-mais">Ver mais</button>
                     </div>
-                </figure>
-                <figure class="box-cameras">
-                    <img src="./assets/images/ruido 1.svg" alt="Imagem de ruído">
-                    <div class="infos-camera">
-                        <div>
-                            <p><strong>ID #23658</strong></p>
-                            <p><strong>Localização:</strong> Poste externo</p>
+                    <div class="alertas">
+                        <span class="material-symbols-outlined icon-fail">emergency_home</span>
+                        <div class="infos-alertas">
+                            <p>ID #123456</p>
+                            <p>Erro na leitura</p>
+                            <p>Data: 07/04/2024 11:01:52</p>
                         </div>
-                        <div>
-                            <p><strong>Status</strong></p>
-                            <p class="status-camera falha">Falha</p>
-                        </div>
+                        <button class="ver-mais">Ver mais</button>
                     </div>
-                </figure>
-                <figure class="box-cameras">
-                    <img src="./assets/images/cam3.svg" alt="Imagem de estrada">
-                    <div class="infos-camera">
-                        <div>
-                            <p><strong>ID #23660</strong></p>
-                            <p><strong>Localização:</strong> Poste externo</p>
+                    <div class="alertas">
+                        <span class="material-symbols-outlined icon-fail">emergency_home</span>
+                        <div class="infos-alertas">
+                            <p>ID #123456</p>
+                            <p>Erro na leitura</p>
+                            <p>Data: 07/04/2024 11:01:52</p>
                         </div>
-                        <div>
-                            <p><strong>Status</strong></p>
-                            <p class="status-camera">Ativo</p>
-                        </div>
+                        <button class="ver-mais">Ver mais</button>
                     </div>
-                </figure>
-                <figure class="box-cameras">
-                    <img src="./assets/images/cam4.svg" alt="Imagem de estrada">
-                    <div class="infos-camera">
-                        <div>
-                            <p><strong>ID #23660</strong></p>
-                            <p><strong>Localização:</strong> Poste externo</p>
+                    <div class="alertas">
+                        <span class="material-symbols-outlined icon-fail2">emergency_home</span>
+                        <div class="infos-alertas">
+                            <p>ID #123456</p>
+                            <p>Erro na leitura</p>
+                            <p>Data: 07/04/2024 11:01:52</p>
                         </div>
-                        <div>
-                            <p><strong>Status</strong></p>
-                            <p class="status-camera">Ativo</p>
-                        </div>
+                        <button class="ver-mais">Ver mais</button>
                     </div>
-                </figure>
-            </div>
-        </section>
+                </section>
+            </section>
+        </div>
 
-        <section class="equipamentos">
-            <div class="titulo-equip">
-                <h1>Status</h1>
-                <h1>Equipamentos</h1>
-            </div>
-            <div class="info-equip">
-                <img src="./assets/images/Ativo.svg" alt="Icone ativo">
-                <p><strong>ID #576533 - </strong>Leitor RFID Pista 2</p>
-                <a href="#">Mais informações</a>
-            </div>
-            <div class="info-equip">
-                <img src="./assets/images/Falha.svg" alt="Icone falha">
-                <p><strong>ID #239588- </strong> Camera Auxiliar 2 Pista 1</p>
-                <a href="#">Mais informações</a>
-            </div>
-            <div class="info-equip">
-                <img src="./assets/images/Ativo.svg" alt="Icone ativo">
-                <p><strong>ID #468222 - </strong>Camera Esterioscópca 3</p>
-                <a href="#">Mais informações</a>
-            </div>
-            <div class="info-equip">
-                <img src="./assets/images/Ativo.svg" alt="Icone ativo">
-                <p><strong>ID #236587 - </strong>Camera Auxiliar 3 Pista 2</p>
-                <a href="#">Mais informações</a>
-            </div>
-            <div class="info-equip">
-                <img src="./assets/images/Ativo.svg" alt="Icone ativo">
-                <p><strong>ID #186753 - </strong>Camera Infravermelho Pista 1</p>
-                <a href="#">Mais informações</a>
-            </div>
-
-        </section>
-
+        <div class="conteudo-dir">
+            <section class="cameras">
+                <div class="titulos-links">
+                    <h1 class="titulo-camera">Câmeras</h1>
+                    <div class="filtro">
+                        <a href="#">Todas</a>
+                        <a href="#">Auxiliar</a>
+                        <a href="#">Infravermelho</a>
+                        <a href="#">Câmera 3D</a>
+                    </div>
+                </div>
+                <div class="painel-camera">
+                    <figure class="box-cameras">
+                        <img src="./assets/images/cam1 1.svg" alt="Imagem de estrada">
+                        <div class="infos-camera">
+                            <div>
+                                <p><strong>ID #23658</strong></p>
+                                <p><strong>Localização:</strong> Poste externo</p>
+                            </div>
+                            <div>
+                                <p><strong>Status</strong></p>
+                                <p class="status-camera">Ativo</p>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="box-cameras">
+                        <img src="./assets/images/ruido 1.svg" alt="Imagem de ruído">
+                        <div class="infos-camera">
+                            <div>
+                                <p><strong>ID #23658</strong></p>
+                                <p><strong>Localização:</strong> Poste externo</p>
+                            </div>
+                            <div>
+                                <p><strong>Status</strong></p>
+                                <p class="status-camera falha">Falha</p>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="box-cameras">
+                        <img src="./assets/images/cam3.svg" alt="Imagem de estrada">
+                        <div class="infos-camera">
+                            <div>
+                                <p><strong>ID #23660</strong></p>
+                                <p><strong>Localização:</strong> Poste externo</p>
+                            </div>
+                            <div>
+                                <p><strong>Status</strong></p>
+                                <p class="status-camera">Ativo</p>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="box-cameras">
+                        <img src="./assets/images/cam4.svg" alt="Imagem de estrada">
+                        <div class="infos-camera">
+                            <div>
+                                <p><strong>ID #23660</strong></p>
+                                <p><strong>Localização:</strong> Poste externo</p>
+                            </div>
+                            <div>
+                                <p><strong>Status</strong></p>
+                                <p class="status-camera">Ativo</p>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </section>
+            <section class="equipamentos">
+                <div class="titulo-equip">
+                    <h1>Status</h1>
+                    <h1>Equipamentos</h1>
+                </div>
+                <div class="info-equip">
+                    <img src="./assets/images/Ativo.svg" alt="Icone ativo">
+                    <p><strong>ID #576533 - </strong>Leitor RFID Pista 2</p>
+                    <a href="#">Mais informações</a>
+                </div>
+                <div class="info-equip">
+                    <img src="./assets/images/Falha.svg" alt="Icone falha">
+                    <p><strong>ID #239588- </strong> Camera Auxiliar 2 Pista 1</p>
+                    <a href="#">Mais informações</a>
+                </div>
+                <div class="info-equip">
+                    <img src="./assets/images/Ativo.svg" alt="Icone ativo">
+                    <p><strong>ID #468222 - </strong>Camera Esterioscópca 3</p>
+                    <a href="#">Mais informações</a>
+                </div>
+                <div class="info-equip">
+                    <img src="./assets/images/Ativo.svg" alt="Icone ativo">
+                    <p><strong>ID #236587 - </strong>Camera Auxiliar 3 Pista 2</p>
+                    <a href="#">Mais informações</a>
+                </div>
+                <div class="info-equip">
+                    <img src="./assets/images/Ativo.svg" alt="Icone ativo">
+                    <p><strong>ID #186753 - </strong>Camera Infraverm. Pista 1</p>
+                    <a href="#">Mais informações</a>
+                </div>
+            </section>
+        </div>
     </main>
 
 

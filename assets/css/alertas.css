@@ -1,0 +1,163 @@
+@import 'default.css';
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-grey);
+}
+
+/* MENU ASIDE */
+
+.aside {
+    font-size: 2rem;
+    background-color: var(--background-aside);
+}
+
+.aside .top-links li:nth-child(3) a {
+    color: var(--color-bottoms);
+    font-weight: bold;
+}
+
+/* CABECALHO */
+
+.cabecalho{
+    background-color: var(--backgroung-boxes);
+    color: var(--text-white);
+    display: flex;
+    padding: 6px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-container{
+    width: 692px;
+    padding: 5px;
+    background-color: #E2E2E2;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    color: var(--background-page);
+}
+
+.icon-pesquisa{
+    padding: 0 12px;
+}
+
+.input-pesquisa{
+    color: var(--background-page);
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+
+.infos-perfil{
+    display: flex;
+    align-items: center;
+}
+
+.icon-perfil{
+    font-size: 4.8rem;
+}
+
+.data-atualizada{
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.nome-func{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.cargo{
+    font-weight: 300;
+}
+
+/* MAIN */
+
+main{
+    color: var(--text-white);
+}
+
+main h1{
+    font-size: 2rem;
+}
+
+/* ULTIMOS ALERTAS */
+
+.ult-alertas{
+    background-color: var(--backgroung-boxes);
+}
+
+.filtro a{
+    font-size: 1.2rem;
+    border: 1px solid;
+}
+
+.filtro a:first-child{
+    color: var(--color-bottoms);
+}
+
+.container-alertas {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.alertas-section {
+    flex-basis: 48%;
+}
+
+.alertas {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-page);
+    padding: 24px 12px;
+    margin: 18px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 8%;
+}
+
+.alertas > * {
+    margin-bottom: 10px;
+}
+
+.icon-fail{
+    color: var(--color-hard-alert);
+    font-size: 4.8rem;
+}
+
+.infos-alertas{
+    font-size: 1.2rem;
+    padding: 0 22px;
+}
+
+.reportar{
+    color: var(--background-aside);
+    background-color: var(--color-bottoms);
+    padding: 6px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.reportar:hover{
+    background-color: var(--background-page);
+    border: 1px solid;
+    color: var(--color-bottoms);
+}

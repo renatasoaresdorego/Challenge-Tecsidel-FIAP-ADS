@@ -19,7 +19,7 @@ body{
         "aside header"
         "aside main";
         grid-template-columns: 15vw auto;
-        grid-template-rows: auto 100vh;
+        grid-template-rows: auto auto;
 }
 
 .o-header {
@@ -207,7 +207,7 @@ main h1{
 .ult-alertas{
     background-color: var(--backgroung-boxes);
     width: 49.68vw;
-    height: 29vh;
+    height: 28vh;
     border-radius: 30px;
     margin: 1.48vh 1.56vw;
     padding: 1.75vh 0.83vw;
@@ -282,7 +282,7 @@ main h1{
     background-color: var(--backgroung-boxes);
     width: 31.40vw;
     height: 60.09vh;
-    padding: 1.94vh 1.71vw;
+    padding: .8vh 1.71vw;
     border-radius: 30px;
 }
 
@@ -318,15 +318,25 @@ main h1{
     color: var(--color-hard-alert);
 }
 
+.config-img{
+    width: 13.5vw;
+    height: 20.5vh;
+}
+
+.el-img{
+    width: 100%;
+    height: 100%;
+}
+
 /* EQUIPAMENTOS */
 
 .equipamentos{
     background-color: var(--backgroung-boxes);
     width: 31.4vw;
-    height: 26.11vh;
+    height: 28vh;
     border-radius: 30px;
     padding: 2.40vh 1.66vw;
-    margin-top: 2.40vh;
+    margin-top: 1.48vh;
 }
 
 .titulo-equip{

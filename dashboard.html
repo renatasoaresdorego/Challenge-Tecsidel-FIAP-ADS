@@ -18,35 +18,38 @@
     <title>Sistema de Monitoramento Tecsidel</title>
 
 </head>
+
 <body>
     <!-- MENU ASIDE -->
-    <aside>
-        <div>
-            <ul class="aside">
-                <img src="./assets/images/Logo-Tecsidel-removebg-preview (1) 1.svg" alt="Logo">
-                <div class="top-links">
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#">Câmeras</a></li>
-                    <li><a href="#">Alertas</a></li>
-                    <li><a href="#">Relatórios</a></li>
-                    <li><a href="#">Gerenciamento</a></li>
-                </div>
-                <div class="bottom-links">
-                    <li><a href="#">Ajuda</a></li>
-                    <li><a href="#">Contato</a></li>
-                </div>
+    <aside class="o-aside">
+        <figure class="logo-aside">
+            <img class="img-logo" src="./assets/images/Logo-Tecsidel-removebg-preview (1) 1.svg" alt="Logo">
+        </figure>
+        <div class="top-links">
+            <ul>
+                <li class="edit-link"><a href="#">Dashboard</a></li>
+                <li class="edit-link"><a href="#">Câmeras</a></li>
+                <li class="edit-link"><a href="#">Alertas</a></li>
+                <li class="edit-link"><a href="#">Relatórios</a></li>
+                <li class="edit-link"><a href="#">Gerenciamento</a></li>
+            </ul>
+        </div>
+        <div class="bottom-links">
+            <ul>
+                <li class="edit-link"><a href="#">Ajuda</a></li>
+                <li class="edit-link"><a href="#">Contato</a></li>
             </ul>
         </div>
     </aside>
 
     <!-- HEADER -->
-    <header class="cabecalho">
+    <header class="cabecalho o-header">
 
         <form action="#" class="search-container">
             <span class="material-symbols-outlined icon-pesquisa">search</span>
             <input type="text" class="input-pesquisa" placeholder="Pesquisa" />
         </form>
-        
+
         <section class="data-atualizada">
             <p id="data"></p>
             <p id="diaSemana"></p>
@@ -62,7 +65,7 @@
         </section>
     </header>
 
-    <main>
+    <main class="o-main">
 
         <section class="portico">
             <div class="supervisorio">
@@ -146,7 +149,7 @@
         </section>
 
         <section class="cameras">
-            <div >
+            <div class="titulos-links">
                 <h1 class="titulo-camera">Câmeras</h1>
                 <div class="filtro">
                     <a href="#">Todas</a>
@@ -156,12 +159,12 @@
                 </div>
             </div>
             <div class="painel-camera">
-                <figure>
+                <figure class="box-cameras">
                     <img src="./assets/images/cam1 1.svg" alt="Imagem de estrada">
                     <div class="infos-camera">
                         <div>
                             <p><strong>ID #23658</strong></p>
-                            <p><strong>Localização:</strong>  Poste externo</p>
+                            <p><strong>Localização:</strong> Poste externo</p>
                         </div>
                         <div>
                             <p><strong>Status</strong></p>
@@ -169,12 +172,12 @@
                         </div>
                     </div>
                 </figure>
-                <figure>
+                <figure class="box-cameras">
                     <img src="./assets/images/ruido 1.svg" alt="Imagem de ruído">
                     <div class="infos-camera">
                         <div>
                             <p><strong>ID #23658</strong></p>
-                            <p><strong>Localização:</strong>  Poste externo</p>
+                            <p><strong>Localização:</strong> Poste externo</p>
                         </div>
                         <div>
                             <p><strong>Status</strong></p>
@@ -182,12 +185,12 @@
                         </div>
                     </div>
                 </figure>
-                <figure>
+                <figure class="box-cameras">
                     <img src="./assets/images/cam3.svg" alt="Imagem de estrada">
                     <div class="infos-camera">
                         <div>
                             <p><strong>ID #23660</strong></p>
-                            <p><strong>Localização:</strong>  Poste externo</p>
+                            <p><strong>Localização:</strong> Poste externo</p>
                         </div>
                         <div>
                             <p><strong>Status</strong></p>
@@ -195,12 +198,12 @@
                         </div>
                     </div>
                 </figure>
-                <figure>
+                <figure class="box-cameras">
                     <img src="./assets/images/cam4.svg" alt="Imagem de estrada">
                     <div class="infos-camera">
                         <div>
                             <p><strong>ID #23660</strong></p>
-                            <p><strong>Localização:</strong>  Poste externo</p>
+                            <p><strong>Localização:</strong> Poste externo</p>
                         </div>
                         <div>
                             <p><strong>Status</strong></p>
@@ -241,13 +244,14 @@
                 <p><strong>ID #186753 - </strong>Camera Infravermelho Pista 1</p>
                 <a href="#">Mais informações</a>
             </div>
-            
+
         </section>
 
     </main>
-    
+
 
 
     <script src="./main.js"></script>
 </body>
+
 </html>

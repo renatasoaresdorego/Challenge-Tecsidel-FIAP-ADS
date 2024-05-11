@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/canva.css">
 
 
     <title>Sistema de Monitoramento Tecsidel</title>
@@ -73,7 +74,14 @@
                     <h1 class="titulo-portico">Pórtico BR-101 - KM 538</h1>
                     <figure>
                         <img class="img-portico" src="./assets/images/PORTICO.png" alt="Representação gráfica do pórtico">
+                        <canvas id="myCanvas" width="941" height="414"></canvas>
                     </figure>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>Conteúdo da sua modal aqui...</p>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <h1 class="ultimos-veiculos">Últimos Veículos</h1>
@@ -271,6 +279,7 @@
 
 
     <script src="./main.js"></script>
+    <script src="./canva.js"></script>
 </body>
 
 </html>

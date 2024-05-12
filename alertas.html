@@ -20,27 +20,29 @@
 </head>
 <body>
     <!-- MENU ASIDE -->
-    <aside>
-        <div>
-            <img src="./assets/images/Logo-Tecsidel-removebg-preview (1) 1.svg" alt="Logo">
-            <ul class="aside">
-                <div class="top-links">
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#">Câmeras</a></li>
-                    <li><a href="#">Alertas</a></li>
-                    <li><a href="#">Relatórios</a></li>
-                    <li><a href="#">Gerenciamento</a></li>
-                </div>
-                <div class="bottom-links">
-                    <li><a href="#">Ajuda</a></li>
-                    <li><a href="#">Contato</a></li>
-                </div>
+    <aside class="o-aside">
+        <figure class="logo-aside">
+            <img class="img-logo" src="./assets/images/Logo-Tecsidel-removebg-preview (1) 1.svg" alt="Logo">
+        </figure>
+        <div class="top-links">
+            <ul>
+                <li class="edit-link"><a href="#">Dashboard</a></li>
+                <li class="edit-link"><a href="#">Câmeras</a></li>
+                <li class="edit-link"><a href="#">Alertas</a></li>
+                <li class="edit-link"><a href="#">Relatórios</a></li>
+                <li class="edit-link"><a href="#">Gerenciamento</a></li>
+            </ul>
+        </div>
+        <div class="bottom-links">
+            <ul>
+                <li class="edit-link"><a href="#">Ajuda</a></li>
+                <li class="edit-link"><a href="#">Contato</a></li>
             </ul>
         </div>
     </aside>
 
     <!-- HEADER -->
-    <header class="cabecalho">
+    <header class="cabecalho o-hader">
 
         <form action="#" class="search-container">
             <span class="material-symbols-outlined icon-pesquisa">search</span>
@@ -64,7 +66,7 @@
 
 
     <!-- MAIN -->
-    <main>
+    <main class="o-main">
 
         <section class="ult-alertas">
             <h1>Últimos Alertas</h1>
@@ -199,6 +201,8 @@
         </section>
 
     </main>
-    
+
+    <script src="./main.js"></script>
+    <script src="./canva.js"></script>
 </body>
 </html>

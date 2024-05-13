@@ -42,7 +42,23 @@ canvas {
     cursor: pointer;
 }
 
-.modal {
+table{
+    font-size: 1.4rem;
+    display: flex;
+    text-align: center;
+}
+
+td, th{
+    padding-right: 3vw;
+}
+
+.botao-modal{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.modal, .modal2 {
     display: none;
     position: fixed;
     z-index: 3; /* Z-index maior que o do canvas */
@@ -51,18 +67,24 @@ canvas {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal-content {
     background-color: #fefefe;
+    color: #000;
+    font-size: 2rem;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+    border-radius: 10px;
+    width: 50%;
 }
 
-.close {
+.modal2 h1{
+    margin-bottom: 3vh;
+}
+
+.close, .close2 {
     color: #aaa;
     float: right;
     font-size: 28px;
@@ -74,4 +96,31 @@ canvas {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.close2:hover,
+.close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.add-manutencao{
+    color: var(--background-aside);
+    background-color: var(--color-bottoms);
+    padding: 6px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-manutencao:hover {
+    background-color: var(--text-white);
+    border: 1px solid var(--color-bottoms);
+    color: #0572bb;
+    font-weight: bold;
 }

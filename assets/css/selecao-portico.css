@@ -1,4 +1,5 @@
 
+
 /* CABECALHO */
 
 .cabecalho{
@@ -131,7 +132,7 @@
 
 .container-mapa{
     width: 60vw;
-    height: 86vh;
+    height: 80vh;
 }
 
 .img-mapa{
@@ -150,7 +151,7 @@
 
 .container-direita{
     width: 35vw;
-    height: 92.6vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -167,13 +168,13 @@
 .conteudo-direita{
     width: 23vw;
     height: 92.6vh;
-    margin-top: 25vh;
+    padding-top: 25vh;
     text-align: center;
 }
 
 .texto-direita{
     font-size: 18px;
-    margin-top: 1vh;
+    padding-top: 1vh;
     text-align: justify;
 }
 
@@ -218,7 +219,3 @@ li:not(:last-child)::after {
     margin: 0 5px; 
 }
 
-.container-links{
-   
-    
-}

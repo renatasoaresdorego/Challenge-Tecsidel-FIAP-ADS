@@ -39,3 +39,34 @@ document.addEventListener("DOMContentLoaded", function() {
   h3.textContent = defaultOption.textContent;
 });
 
+/*Modal Cameras */
+function abrirFullScreen(caminhoDaImagem) {
+  const imgFullScreen = new Image();
+  imgFullScreen.src = caminhoDaImagem;
+
+  imgFullScreen.onload = function() {
+      const fullscreenElement = document.fullscreenElement || document.webkitFullscreenElement ||
+          document.mozFullScreenElement || document.msFullscreenElement;
+      if (!fullscreenElement) {
+          const imgContainer = document.createElement('div');
+          imgContainer.classList.add('fullscreen-container');
+          const imgElement = document.createElement('img');
+          imgElement.src = caminhoDaImagem;
+          imgElement.classList.add('fullscreen-image'); // Adiciona a classe fullscreen-image
+          imgContainer.appendChild(imgElement);
+          document.body.appendChild(imgContainer);
+          imgContainer.requestFullscreen = imgContainer.requestFullscreen || imgContainer.webkitRequestFullscreen ||
+              imgContainer.mozRequestFullScreen || imgContainer.msRequestFullscreen;
+          imgContainer.requestFullscreen();
+          imgContainer.addEventListener('fullscreenchange', function() {
+              if (!document.fullscreenElement) {
+                  document.body.removeChild(imgContainer);
+              }
+          });
+      } else {
+          document.exitFullscreen();
+      }
+  };
+}
+
+

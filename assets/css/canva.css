@@ -45,7 +45,7 @@ canvas {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 3; /* Z-index maior que o do canvas */
     left: 0;
     top: 0;
     width: 100%;

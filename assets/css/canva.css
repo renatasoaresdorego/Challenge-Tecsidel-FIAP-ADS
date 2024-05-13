@@ -17,6 +17,20 @@ canvas {
     z-index: 1; /* Garante que a imagem esteja atrás do canvas */
 }
 
+.figure-container {
+    position: relative; /* Garante que a figura seja usada como referência para o posicionamento do canvas */
+    width: 100%; /* Faz com que a figura ocupe 100% da largura disponível */
+    height: 100%; /* Ou qualquer outra altura desejada */
+}
+
+.figure-container canvas {
+    position: absolute; /* Permite posicionar o canvas dentro da figura */
+    top: 0;
+    left: 0;
+    width: 100%; /* Faz com que o canvas ocupe 100% da largura da figura */
+    height: 100%;
+}
+
 #myCanvas {
     position: absolute;
     top: 24px;

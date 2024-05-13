@@ -28,6 +28,7 @@ canvas.addEventListener('click', function(event) {
     if ((mouseX >= 100 && mouseX <= 150 && mouseY >= 100 && mouseY <= 150) ||
         (mouseX >= 200 && mouseX <= 250 && mouseY >= 100 && mouseY <= 150)) {
         // Exibe a modal
+        var modal = document.getElementById('myModal');
         modal.style.display = "block";
     }
 });

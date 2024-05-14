@@ -16,6 +16,10 @@
 
 .input-pesquisa{
     width: 36vw;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-left: 1vw;
 }
 
 .logotipo{
@@ -64,8 +68,7 @@
 
 .infos-perfil{
     font-size: 14px;
-    margin-left: 5.5vw;
-   
+    margin-left: 5.5vw;   
 }
 
 .container-dados{

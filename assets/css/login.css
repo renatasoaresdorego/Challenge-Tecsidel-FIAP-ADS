@@ -1,48 +1,58 @@
 @import 'default.css';
 
-.container-login {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}*/
-
-.imgbackground{
-    grid-column: 3fr;
-    width: 100vw;
-    max-height: 100vh;
-    display: block;
-    object-fit: cover;
+.pagina {
+    display: flex;
 }
 
-.container{
-    grid-column: 1fr;
-    width: 55vh;
+.container-esq{
+    width: 73vw;
+    height: 99vh;
+}
+
+.imgbackground{
+    width: 100%;
+    height: 100%;
+}
+
+.container-dir{
+    width: 27vw;
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .container-logo{
-    margin:80px 0px 80px 0px;
     display: flex;
     justify-content: center;
+    width: 23vw;
+}
+
+.img-logo{
+    width: 100%;
 }
 
 .titulo-login{
     font-size: 2rem;
     display: flex;
     justify-content: center;
-    margin-bottom: 70px;
 }
 
 .login{
     display: flex;
     flex-direction: column;
+    width: 23vw;
 }
 
 .input{
     display: flex;
     align-items: center;
     border: 1px solid var(--text-grey);
-    margin: 8px 70px 8px 77px;
+    margin-bottom: 1vh;
     border-radius: 5px;
+    width: 100%;
 }
 
 .icone-matricula, .icone-senha, .icone-auth{
@@ -54,11 +64,15 @@
 .text-input{
     font-size: 1.4rem;
     margin-left: 14px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-white);
+    width: 100%;
 }
 
 .text-lost{
     font-size: 1.4rem;
-    margin: 52px 70px 72px 77px;
 }
 
 a{
@@ -70,14 +84,19 @@ a{
     text-decoration: underline;
 }
 
+.botao-login{
+    width: 23vw;
+}
+
 .botao-entrar{
-    padding: 16px 148px;
+    width: 100%;
+    padding: 2vh 0;
     color: var(--text-white);
     font-size: 2rem;
     font-weight: bold;
     border-radius: 5px;
     background-color: var(--color-bottoms);
-    margin: 0 70px 124px 77px;
+    border: none;
 }
 
 ul{

@@ -48,3 +48,4 @@ closeModal2.addEventListener("click", function () {
     // Oculte a modal
     modal2.style.display = "none";
 });
+

@@ -111,6 +111,8 @@
 
 .container-esquerda{
     width: 58vw;
+    height: 70vh;
+    border: white 10px;
 
 }
 
@@ -182,7 +184,7 @@
 }
 
 .botao-monitorar{
-    color: var(--background-aside);
+    color: var(--text-white);
     background-color: var(--color-bottoms);
     width: 13vw;
     height: 3.5vh;
@@ -192,7 +194,7 @@
     display: inline-block;
     font-size: 16px;
     font-weight: bold;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 5vh;
@@ -221,4 +223,23 @@ li:not(:last-child)::after {
     content: "|"; 
     margin: 0 5px; 
 }
+body {
+    overflow: hidden;
+}
 
+a{
+    text-decoration: none;
+    color: var(--text-grey);
+}
+
+.container-mapa {
+width: 5%;
+height: 100%;
+position: absolute;
+}
+
+.canvas-imagem {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

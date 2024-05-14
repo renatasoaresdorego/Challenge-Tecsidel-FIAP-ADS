@@ -5,68 +5,70 @@ ul {
     padding: 0;
     margin: 0;
 }
+
 li {
     margin-bottom: 10px;
 }
+
 a {
     text-decoration: none;
     color: var(--text-grey);
 }
 
-body{
+body {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "aside header"
         "aside main";
-        grid-template-columns: 15vw auto;
-        grid-template-rows: auto auto;
+    grid-template-columns: 15vw auto;
+    grid-template-rows: auto auto;
 }
 
 .o-header {
     grid-area: header;
-    }
-    
-    .o-aside {
+}
+
+.o-aside {
     grid-area: aside;
     height: 100vh;
     width: 15vw;
     background-color: var(--background-aside);
     display: flex;
     flex-direction: column;
-    }
-    
-    .o-main {
+}
+
+.o-main {
     grid-area: main;
     display: flex;
-    }
+}
 
 /* MENU ASIDE */
 
-.o-aside a{
+.o-aside a {
     font-size: 2rem;
 }
 
-.logo-aside{
+.logo-aside {
     width: 14vw;
 }
 
-.img-logo{
+.img-logo {
     width: 100%;
     height: 100%;
     padding: 2.5vh 0.57vw;
 }
 
-.edit-link{
+.edit-link {
     margin-top: 5.37vh;
 }
 
-.top-links{
+.top-links {
     display: flex;
     flex-direction: column;
     padding: 7.12vh 1.87vw;
 }
 
-.bottom-links{
+.bottom-links {
     padding: 0 7.12vh 0 1.87vw;
     display: flex;
     flex-direction: column;
@@ -81,7 +83,7 @@ body{
 
 /* CABECALHO */
 
-.cabecalho{
+.cabecalho {
     background-color: var(--backgroung-boxes);
     color: var(--text-white);
     display: flex;
@@ -90,7 +92,7 @@ body{
     align-items: center;
 }
 
-.search-container{
+.search-container {
     width: 692px;
     padding: 5px;
     background-color: #E2E2E2;
@@ -100,64 +102,64 @@ body{
     color: var(--background-page);
 }
 
-.icon-pesquisa{
+.icon-pesquisa {
     padding: 0 12px;
 }
 
-.input-pesquisa{
+.input-pesquisa {
     color: var(--background-page);
+    background-color: transparent;
     border: none;
-    background: none;
-    box-shadow: none;
+    outline: none;
     width: 33vw;
     height: 3.2vh;
 }
 
-.infos-perfil{
+.infos-perfil {
     display: flex;
     align-items: center;
 }
 
-.container-dados{
+.container-dados {
     text-align: right;
 }
 
-.icon-perfil{
+.icon-perfil {
     font-size: 4.8rem;
     margin-left: 1.5vw;
 }
 
-.data-atualizada{
+.data-atualizada {
     font-size: 2.4rem;
     font-weight: bold;
 }
 
-.nome-func{
+.nome-func {
     font-size: 1.4rem;
     font-weight: 500;
 }
 
-.cargo{
+.cargo {
     font-weight: 300;
 }
 
 /* MAIN */
 
-main{
+main {
     color: var(--text-white);
 }
 
-main h1{
+main h1 {
     font-size: 2rem;
 }
 
-.conteudo-dir{
+.conteudo-dir {
     margin-top: 1.75vh;
 }
 
 /* PORTICO */
 
-.portico{
+.portico {
     background-color: var(--backgroung-boxes);
     width: 49.7vw;
     height: 60vh;
@@ -166,45 +168,48 @@ main h1{
     padding: 1.75vh 0.83vw;
 }
 
-.titulo-portico, .ultimos-veiculos{
+.titulo-portico,
+.ultimos-veiculos {
     padding-left: 2.8vw;
 }
 
-.img-portico{
+.img-portico {
     width: 47.6vw;
     height: 38.4vh;
     margin: 2.5vh 0;
 }
 
-.ultimos-veiculos{
+.ultimos-veiculos {
     margin-bottom: 1vh;
 }
 
-.veic{
+.veic {
     display: flex;
     font-size: 1.4rem;
 }
 
-.veic li{
+.veic li {
     padding-left: 1.87vw;
 }
 
 /* ULTIMOS VEICULOS */
 
-.infos-veiculos{
+.infos-veiculos {
     background-color: var(--background-page);
     border-radius: 10px;
     align-items: center;
     text-align: center;
     padding: 1vh 1.70vw;
-    max-height: 7.06vh;
+    max-height: 9vh;
     /* Adicionando uma barra de rolagem vertical quando necessário */
     overflow-y: auto;
+    margin-top: 0.1vh;
+
 }
 
 /* ULTIMOS ALERTAS */
 
-.ult-alertas{
+.ult-alertas {
     background-color: var(--backgroung-boxes);
     width: 49.68vw;
     height: 28vh;
@@ -213,46 +218,47 @@ main h1{
     padding: 1.75vh 0.83vw;
 }
 
-.titulos-links{
+.titulos-links {
     display: flex;
     justify-content: space-between;
     padding: 21px 59px;
 }
 
-.container-alertas{
+.container-alertas {
     display: flex;
     flex-wrap: wrap;
 }
 
-.filtro a{
+.filtro a {
     font-size: 1.2rem;
     border: 1px solid;
     padding: 0.55vh 0.52vw;
 }
 
-.filtro a:first-child{
+.filtro a:first-child {
     color: var(--color-bottoms);
 }
 
-.alertas{
+.alertas {
     display: flex;
     background-color: var(--background-page);
     border-radius: 10px;
     padding: 1.20vh 1.09vw;
     margin: 0.83vh 0.36vw;
+    align-items: center;
 }
 
-.icon-fail{
+.icon-fail {
     color: var(--color-hard-alert);
     font-size: 4.8rem;
 }
 
-.infos-alertas{
+.infos-alertas {
     font-size: 1.2rem;
     padding: 0 74px 0 22px;
 }
 
-.ver-mais{
+.ver-mais {
     color: var(--background-aside);
     background-color: var(--color-bottoms);
     padding: 6px 24px;
@@ -260,25 +266,26 @@ main h1{
     text-decoration: none;
     display: inline-block;
     font-size: 1.2rem;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.ver-mais:hover{
+.ver-mais:hover {
     background-color: var(--background-page);
-    border: 1px solid;
+    border-color: var(--color-bottoms);
     color: var(--color-bottoms);
 }
 
-.icon-fail2{
+
+.icon-fail2 {
     color: var(--color-midium-alert);
     font-size: 4.8rem;
 }
 
 /* CAMERAS */
 
-.cameras{
+.cameras {
     background-color: var(--backgroung-boxes);
     width: 31.40vw;
     height: 60.09vh;
@@ -286,68 +293,108 @@ main h1{
     border-radius: 30px;
 }
 
-.filtro a{
+.filtro a {
     font-size: 1.2rem;
 }
 
-.painel-camera{
+.painel-camera {
     display: flex;
     flex-wrap: wrap;
 }
 
-.painel-camera p{
+.painel-camera p {
     font-size: 1.2rem;
 }
 
-.box-cameras{
+.box-cameras {
     padding: 0.21vw;
 }
 
-.infos-camera{
+.infos-camera {
     display: flex;
     padding-top: 10px;
     justify-content: space-between;
     margin-right: 10px;
 }
 
-.status-camera{
+.status-camera {
     color: var(--color-status);
 }
 
-.falha{
+.falha {
     color: var(--color-hard-alert);
 }
 
-.config-img{
+.config-img {
     width: 13.5vw;
     height: 20.5vh;
 }
 
-.el-img{
+.el-img {
     width: 100%;
     height: 100%;
 }
 
 /* EQUIPAMENTOS */
 
-.equipamentos{
+.equipamentos {
     background-color: var(--backgroung-boxes);
     width: 31.4vw;
     height: 28vh;
     border-radius: 30px;
     padding: 2.40vh 1.66vw;
     margin-top: 1.48vh;
+   
+    display: flex; /* Define o layout flexível */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+ 
+
 }
 
-.titulo-equip{
+.titulo-equip {
     display: flex;
     gap: 40px;
 }
 
 
-.info-equip{
+.info-equip {
+   
+}
+
+.supervisorio {
     display: flex;
-    font-size: 1.4rem;
-    padding: 10px 15px;
-    gap: 60px;
+    margin-bottom: 4vh;
+}
+
+
+.tabela-veiculos th,
+.tabela-veiculos td {
+  padding-right: 4vw;
+
+}
+
+.tabela-equipamentos {
+    border-collapse: collapse; 
+    width: 100%; 
+    text-align: left;
+    margin-left: 1vw;
+   
+}
+
+.ultimo{
+
+    text-align: center;
+}
+
+.maior{
+    width: 40vw;
+}
+
+.menor{
+    width: 5vw;
+}
+
+.info-equip a{
+    font-size: 1rem;
 }

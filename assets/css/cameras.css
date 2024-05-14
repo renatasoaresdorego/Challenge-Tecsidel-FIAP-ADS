@@ -13,6 +13,12 @@ a {
     color: var(--text-grey);
 }
 
+.o-aside .top-links li:nth-child(2) a {
+    color: var(--color-bottoms);
+    font-weight: bold;
+}
+
+
 body{
     display: grid;
     grid-template-areas: 
@@ -82,10 +88,7 @@ main h3{
     bottom: 54px;
 }
 
-.o-aside .top-links li:first-child a {
-    color: var(--color-bottoms);
-    font-weight: bold;
-}
+
 
 /* CABECALHO */
 
@@ -115,9 +118,9 @@ main h3{
 
 .input-pesquisa{
     color: var(--background-page);
+    background-color: transparent;
     border: none;
-    background: none;
-    box-shadow: none;
+    outline: none;
     width: 33vw;
     height: 3.2vh;
 }

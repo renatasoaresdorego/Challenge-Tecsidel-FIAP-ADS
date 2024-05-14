@@ -28,8 +28,8 @@
         </figure>
         <div class="top-links">
             <ul>
-                <li class="edit-link"><a href="#">Dashboard</a></li>
-                <li class="edit-link"><a href="#">Câmeras</a></li>
+                <li class="edit-link"><a href="dashboard.html">Dashboard</a></li>
+                <li class="edit-link"><a href="cameras.html">Câmeras</a></li>
                 <li class="edit-link"><a href="alertas.html">Alertas</a></li>
                 <li class="edit-link"><a href="#">Relatórios</a></li>
                 <li class="edit-link"><a href="#">Gerenciamento</a></li>
@@ -70,8 +70,8 @@
 
         <div class="conteudo-esq">
             <section class="portico">
+                <h1 class="titulo-portico">Pórtico BR-101 - KM 538</h1>
                 <div class="supervisorio">
-                    <h1 class="titulo-portico">Pórtico BR-101 - KM 538</h1>
                     <figure class="figure-container">
                         <img class="img-portico" src="./assets/images/PORTICO.png"
                             alt="Representação gráfica do pórtico">
@@ -125,56 +125,61 @@
                             </table>
                             <div class="botao-modal">
                                 <button class="add-manutencao">Acionar Manutenção</button>
-                            </div>    
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <h1 class="ultimos-veiculos">Últimos Veículos</h1>
-                    <div class="infos-veiculos">
-                        <ul class="veic">
-                            <li>Placa: R2D2-990</li>
-                            <li>Tipo: Automóvel</li>
-                            <li>Quantidade de Eixos: 2 </li>
-                            <li>Tag:</li>
-                            <img src="./assets/images/Ativo.svg" alt="Icone de ativo">
-                            <li>Ativa</li>
-                        </ul>
-                        <ul class="veic">
-                            <li>Placa: FML-3269</li>
-                            <li>Tipo: Caminhão</li>
-                            <li>Quantidade de Eixos: 12 </li>
-                            <li>Tag:</li>
-                            <img src="./assets/images/Falha.svg" alt="Icone falha">
-                            <li>Falha</li>
-                        </ul>
-                        <ul class="veic">
-                            <li>Placa: R2D2-990</li>
-                            <li>Tipo: Automóvel</li>
-                            <li>Quantidade de Eixos: 2 </li>
-                            <li>Tag:</li>
-                            <img src="./assets/images/Ativo.svg" alt="Icone de ativo">
-                            <li>Ativa</li>
-                        </ul>
-                        <ul class="veic">
-                            <li>Placa: FML-3269</li>
-                            <li>Tipo: Caminhão</li>
-                            <li>Quantidade de Eixos: 12 </li>
-                            <li>Tag:</li>
-                            <img src="./assets/images/Falha.svg" alt="Icone falha">
-                            <li>Falha</li>
-                        </ul>
-                    </div>
+                <h1 class="ultimos-veiculos">Últimos Veículos</h1>
+                <div class="infos-veiculos">
+                    <table class="tabela-veiculos">
+                        <tr>
+                            <th>Placa</th>
+                            <th>Tipo</th>
+                            <th>Quantidade de Eixos</th>
+                            <th>Tag</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>R2D2-990</td>
+                            <td>Automóvel</td>
+                            <td>2</td>
+                            <td><img src="./assets/images/Ativo.svg" alt="Icone de ativo"></td>
+                            <td>Ativa</td>
+                        </tr>
+                        <tr>
+                            <td>FML-3269</td>
+                            <td>Caminhão</td>
+                            <td>12</td>
+                            <td><img src="./assets/images/Falha.svg" alt="Icone falha"></td>
+                            <td>Falha</td>
+                        </tr>
+                        <tr>
+                            <td>R2D2-990</td>
+                            <td>Automóvel</td>
+                            <td>2</td>
+                            <td><img src="./assets/images/Ativo.svg" alt="Icone de ativo"></td>
+                            <td>Ativa</td>
+                        </tr>
+                        <tr>
+                            <td>FML-3269</td>
+                            <td>Caminhão</td>
+                            <td>12</td>
+                            <td><img src="./assets/images/Falha.svg" alt="Icone falha"></td>
+                            <td>Falha</td>
+                        </tr>
+                    </table>
+                    
                 </div>
+
             </section>
             <section class="ult-alertas">
                 <div class="titulos-links">
                     <h1 class="titulo-alertas">Últimos Alertas</h1>
                     <div class="filtro">
-                        <a href="#">Todos</a>
-                        <a href="#">RFID</a>
-                        <a href="#">Equipamentos</a>
-                        <a href="#">Manutenção</a>
+                        <a href="alertas.html">Todos</a>
+                        <a href="alertas.html">RFID</a>
+                        <a href="alertas.html">Equipamentos</a>
+                        <a href="alertas.html">Manutenção</a>
                     </div>
                 </div>
                 <section class="container-alertas">
@@ -185,7 +190,11 @@
                             <p>Erro na leitura</p>
                             <p>Data: 07/04/2024 11:01:52</p>
                         </div>
-                        <button class="ver-mais">Ver mais</button>
+
+                        <a href="alertas.html">
+                            <button class="ver-mais">Ver mais</button>
+                        </a>
+
                     </div>
                     <div class="alertas">
                         <span class="material-symbols-outlined icon-fail">emergency_home</span>
@@ -194,7 +203,9 @@
                             <p>Erro na leitura</p>
                             <p>Data: 07/04/2024 11:01:52</p>
                         </div>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="alertas.html">
+                            <button class="ver-mais">Ver mais</button>
+                        </a>
                     </div>
                     <div class="alertas">
                         <span class="material-symbols-outlined icon-fail">emergency_home</span>
@@ -203,7 +214,9 @@
                             <p>Erro na leitura</p>
                             <p>Data: 07/04/2024 11:01:52</p>
                         </div>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="alertas.html">
+                            <button class="ver-mais">Ver mais</button>
+                        </a>
                     </div>
                     <div class="alertas">
                         <span class="material-symbols-outlined icon-fail2">emergency_home</span>
@@ -212,7 +225,9 @@
                             <p>Erro na leitura</p>
                             <p>Data: 07/04/2024 11:01:52</p>
                         </div>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="alertas.html">
+                            <button class="ver-mais">Ver mais</button>
+                        </a>
                     </div>
                 </section>
             </section>
@@ -293,35 +308,45 @@
                 </div>
             </section>
             <section class="equipamentos">
-                <div class="titulo-equip">
-                    <h1>Status</h1>
-                    <h1>Equipamentos</h1>
-                </div>
-                <div class="info-equip">
-                    <img src="./assets/images/Ativo.svg" alt="Icone ativo">
-                    <p><strong>ID #576533 - </strong>Leitor RFID Pista 2</p>
-                    <a href="#">Mais informações</a>
-                </div>
-                <div class="info-equip">
-                    <img src="./assets/images/Falha.svg" alt="Icone falha">
-                    <p><strong>ID #239588- </strong> Camera Auxiliar 2 Pista 1</p>
-                    <a href="#">Mais informações</a>
-                </div>
-                <div class="info-equip">
-                    <img src="./assets/images/Ativo.svg" alt="Icone ativo">
-                    <p><strong>ID #468222 - </strong>Camera Esterioscópca 3</p>
-                    <a href="#">Mais informações</a>
-                </div>
-                <div class="info-equip">
-                    <img src="./assets/images/Ativo.svg" alt="Icone ativo">
-                    <p><strong>ID #236587 - </strong>Camera Auxiliar 3 Pista 2</p>
-                    <a href="#">Mais informações</a>
-                </div>
-                <div class="info-equip">
-                    <img src="./assets/images/Ativo.svg" alt="Icone ativo">
-                    <p><strong>ID #186753 - </strong>Camera Infraverm. Pista 1</p>
-                    <a href="#">Mais informações</a>
-                </div>
+                
+                    <table class="tabela-equipamentos">
+                        <tr>
+                            <th class="menor">Status</th>
+                            <th class="maior">Equipamentos</th>
+                        </tr>
+                        <tr class="info-equip">
+                            <td class="menor"><img src="./assets/images/Ativo.svg" alt="Icone ativo"></td>
+                            <td class="maior"><strong>ID #576533 - </strong>Leitor RFID Pista 2</td>
+                            <td class="ultimo"><a href="#">Mais informações</a></td>
+                        </tr>
+                        <tr class="info-equip">
+                            <td class="menor"><img src="./assets/images/Falha.svg" alt="Icone falha"></td>
+                            <td class="maior"><strong>ID #239588- </strong> Camera Auxiliar 2 Pista 1</td>
+                            <td class="ultimo"><a href="#">Mais informações</a></td>
+                        </tr>
+                        <tr class="info-equip">
+                            <td class="menor"><img src="./assets/images/Ativo.svg" alt="Icone ativo"></td>
+                            <td class="maior"><strong>ID #468222 - </strong>Camera Esterioscópca 3</td>
+                            <td class="ultimo"><a href="#">Mais informações</a></td>
+                        </tr>
+                        <tr class="info-equip">
+                            <td class="menor"><img src="./assets/images/Ativo.svg" alt="Icone ativo"></td>
+                            <td class="maior"><strong>ID #236587 - </strong>Camera Auxiliar 3 Pista 2</td>
+                            <td class="ultimo"><a href="#">Mais informações</a></td>
+                        </tr>
+                        <tr class="info-equip">
+                            <td><img src="./assets/images/Ativo.svg" alt="Icone ativo"></td>
+                            <td><strong>ID #186753 - </strong>Camera Infraverm. Pista 1</td>
+                            <td class="ultimo"><a href="#">Mais informações</a></td>
+                        </tr>
+                        <tr class="info-equip">
+                            <td><img src="./assets/images/Ativo.svg" alt="Icone ativo"></td>
+                            <td><strong>ID #186099 - </strong>Camera Infraverm. Pista 2</td>
+                            <td class="ultimo"><a href="#">Mais informações</a></td>
+                        </tr>
+                    </table>
+             
+                
             </section>
         </div>
     </main>

@@ -1,0 +1,22 @@
+@import url(default.css);
+.main-container {
+    position: fixed;
+    top: 51.1%; /* Coloca o topo do elemento no meio da tela */
+    left: 49.5%; /* Coloca o lado esquerdo do elemento no meio da tela */
+    transform: translate(-40%, -45%); /* Move o elemento de volta metade de sua própria largura e altura, o que o centraliza completamente */
+    width: 82%; /* Largura do elemento */
+    height: 85%; /* Altura do elemento */
+    background-color: var(--background-boxes);
+    border-radius: 9px;
+    margin-top: 0%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para dar destaque */
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 90%; /* Reduz a largura para dispositivos menores */
+        height: 90%; /* Reduz a altura para dispositivos menores */
+    }
+}
+
+/* Estilo base para a tabela */
